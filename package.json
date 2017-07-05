@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/silveimar/jenkins-pipeline-example#readme",
   "dependencies": {
-    "express": "^4.15.3",
-    "gulp": "^3.9.1"
+    "express": "^4.15.3"
   },
   "babel": {
     "presets": [
