@@ -3,20 +3,20 @@
 pipeline {
     agent any
     tools {
-        nodejs 'Node 7.x'
+        nodejs 'node-8.1.3'
     }
     stages {
         stage('Build') {
             steps {
-                sh 'node --version'
+                sh 'nodejs --version'
                 sh 'npm install'
-                sh 'node lint'
+                sh 'nodejs lint'
             }
         }
         stage('Test') {
             steps {
-                sh 'node --version'
-                sh 'node test'
+                sh 'nodejs --version'
+                sh 'nodejs test'
             }
         }
     }
