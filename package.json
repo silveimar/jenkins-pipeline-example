@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
-    "lint": "gulp lint",
+    "precommit": "gulp lint",
+    "prepush": "gulp test",
     "start": "gulp start"
   },
   "repository": {
@@ -62,6 +63,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-util": "^3.0.8",
     "gulp-wait": "0.0.2",
+    "husky": "^0.14.2",
     "mocha": "^3.3.0",
     "mocha-jenkins-reporter": "^0.3.8",
     "supertest": "^3.0.0",

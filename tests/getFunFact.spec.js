@@ -4,7 +4,6 @@ const request = require('supertest-as-promised');
 const chaiAsPromised = require("chai-as-promised");
 const chai = require('chai');
 chai.use(chaiAsPromised);
-
 const expect = chai.expect;
 
 const getFunFactModule = require(`${__base}/server/getFunFactModule`);
